@@ -2,4 +2,6 @@
 15:30 /includes/myDB.inc.php - Datenbank Klasse - Erstellt und 2 Funktionen hinzugef�gt (connection,close) 
 15:40 /includes/mysql.inc.php- Erstellt und mit Logindaten befüllt
 16.40 /login/login.php - fertig mit dem HTML-Teil wird aber der HTML code wird noch herausgenommen und includiert in der login_html.php/
-
+21.20 /doku/aufbau.txt - Einige sachen ergänzt
+22.30 /includes/myDB.inc.php - Datenbank Klasse - Fertiggestellt sollte alles richtig funktionieren
+22.40 /doku/MyDBklasse.txt - Kleine Doku zu der DB klasse erstellt. 

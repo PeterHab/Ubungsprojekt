@@ -1,15 +1,24 @@
-Aufbau des Projektes 
+Aufbau des Projektes
+
+
 
 
 1.  Datenbank planen - ENGINE = InnoDB{
 	-Tabellen{
 		-User{
 			-ID
-			-Nickname
-			-Passwort
-			-Charakter
-			-Registriert seit
+                        -autologin
+                        -ip
+                        -sessionID
+			-username
+			-password
+                        -email
+                        -show_email
+                        -avatar
+			-Registrierungsdatum
 			-Letzter Login
+                        -Letzte aktion
+                        -Charakter
 		}
 
 		-Büro{
@@ -24,7 +33,7 @@ Aufbau des Projektes
 			-Geld
 		}
 	
-		-Aktivit�ten{
+		-Aktivitäten{
 			-Weiterbildung
 			-Arbeiten
 			-ETC.
@@ -42,7 +51,7 @@ Aufbau des Projektes
 }
 
 
-1.1 Voraussetzungen Pr�fen 
+1.1 Voraussetzungen Prüfen 
 PHP 5.4.4{
 	-Objektorientiert
 	-Modular
@@ -65,7 +74,7 @@ PHP 5.4.4{
 	-Name
 	-Eigenschaften{
 		-Int
-		-Kreativit�t
+		-Kreativität
 		-...
 	}
 	-Klasse(Entwikler,Projektleiter,Kreation)
@@ -90,12 +99,12 @@ PHP 5.4.4{
 
 4. Umsetzung planen
 
-5. Grundger�st programmieren
+5. Grundgerüst programmieren
 
 5.1 Tests 
 
 
-Spielerkl�rung:
+Spielerklärung:
 Man f�ngt als Azubi in einem Unternehmen an -Charakterauswahl
                 -Entwikler
                 -Kreation

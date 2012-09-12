@@ -1,4 +1,5 @@
 <?php
+require_once("mySql.inc.php");
 ##################################
 ##      Datenbankklasse         ##
 ##  Thor: Peter Haberkorn       ##
@@ -53,11 +54,45 @@ class MyDB{
             }
             if(is_object($result)){
                 $result->close();
-            }
-            
+            }  
+        }
+        else{
+            throw new Exception(__METHOD__.'::'.$this->connection->error.'::'.$sql);
+        };
+        return $data;
+    }
+    
+    public function startTransaction($isolation_level="SERIALIZABLE"){
+        if(!$this->connection){
+            return false;
+            $isolation_level = strtoupper($isolation_level);
+            $ok = $this->query("SET TRANSACTION ISOLATION LEVEL{$isolation_level};", "bool");
+            $ok = ($ok && $this->query("SET AUTOCOMMIT = 0;", "bool"));
+            return($ok && $this->query("START TRANSACTION;", "bool"));
         }
     }
-
     
+    public function commit(){
+        if(!$this->connection){
+            return false;
+        }
+        if(!$this->query("COMMIT;", "bool")){
+            return false;
+        }
+        $this->query("SET AUTOCOMMIT=1;", "bool");
+        return true;
+    }
+    
+    public function rollback(){
+        if(!$this->connection){
+            return false;
+        }
+        if(!$this->query("ROLLBACK;","bool")){
+            return false;
+        }
+        $this->query("SET AUTOCOMMIT=1;");
+        return true;
+        
+    }
 }
 ?>

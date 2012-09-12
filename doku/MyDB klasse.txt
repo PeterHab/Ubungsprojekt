@@ -1,0 +1,28 @@
+require("includes/MyDB.inc.php");
+
+$db = new MyDB(); klasse erstellen
+
+
+$db->connect('localhost', 'root', '', 'ubungsprojekt'); Connect zeugs
+
+$db->startTransaction(); // Wichtig bei mehreren dateizugriffen!! Teil 1
+
+try
+{
+  $Normaler Select = $db->query("SELECT * FROM user", 'assoc');
+ 
+// Zeile einfügen
+  $db->query("INSERT INTO user (username,email,charakter) VALUES ( 'Testuser','test','test')");
+
+  //Wichtig teil 2 
+  $db->commit();
+}
+catch(Exception $e)
+{
+
+    //Wichtig Teil 3
+  $db->rollback();
+  echo $e->getMessage();
+};
+//erklärt sich von selber 
+$db->close();
