@@ -1,4 +1,4 @@
-
+Aufbau des Projektes 
 
 
 1.  Datenbank planen - ENGINE = InnoDB{
@@ -12,7 +12,7 @@
 			-Letzter Login
 		}
 
-		-Büro{
+		-BÃ¼ro{
 			-Objekte
 		}
 
@@ -24,7 +24,7 @@
 			-Geld
 		}
 	
-		-Aktivitäten{
+		-Aktivitï¿½ten{
 			-Weiterbildung
 			-Arbeiten
 			-ETC.
@@ -42,7 +42,7 @@
 }
 
 
-1.1 Voraussetzungen Prüfen 
+1.1 Voraussetzungen Prï¿½fen 
 PHP 5.4.4{
 	-Objektorientiert
 	-Modular
@@ -65,7 +65,7 @@ PHP 5.4.4{
 	-Name
 	-Eigenschaften{
 		-Int
-		-Kreativität
+		-Kreativitï¿½t
 		-...
 	}
 	-Klasse(Entwikler,Projektleiter,Kreation)
@@ -74,7 +74,7 @@ PHP 5.4.4{
 	-Xp
 }
 
-3.2 Aktivitäten {
+3.2 Aktivitï¿½ten {
 	-Arbeiten
 	-Lernen
 	-Schlafen
@@ -90,19 +90,19 @@ PHP 5.4.4{
 
 4. Umsetzung planen
 
-5. Grundgerüst programmieren
+5. Grundgerï¿½st programmieren
 
 5.1 Tests 
 
 
-Spielerklärung:
-Man fängt als Azubi in einem Unternehmen an -Charakterauswahl
+Spielerklï¿½rung:
+Man fï¿½ngt als Azubi in einem Unternehmen an -Charakterauswahl
                 -Entwikler
                 -Kreation
                 -etc
 
 
-Mit diesen Charakteren ist es die Aufgabe Level zu erreichen ab einem bestimmten Level wird man befördert und Kann Andere Projekte mit machen.
+Mit diesen Charakteren ist es die Aufgabe Level zu erreichen ab einem bestimmten Level wird man befï¿½rdert und Kann Andere Projekte mit machen.
 Der Charakter soll kein leben wo er sterben kann sondern :
                 -Int
                 -Motivation
