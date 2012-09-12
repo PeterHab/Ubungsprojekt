@@ -1,0 +1,115 @@
+
+
+
+1.  Datenbank planen - ENGINE = InnoDB{
+	-Tabellen{
+		-User{
+			-ID
+			-Nickname
+			-Passwort
+			-Charakter
+			-Registriert seit
+			-Letzter Login
+		}
+
+		-Büro{
+			-Objekte
+		}
+
+		-Charakter{
+			-Name
+			-Klasse (Entwikler,Projektleiter,Kreation)
+			-Eigenschaften
+			-Items(?)
+			-Geld
+		}
+	
+		-Aktivitäten{
+			-Weiterbildung
+			-Arbeiten
+			-ETC.
+		}
+
+		-Objekte{
+			-Name
+			-Gruppe
+			-Preis
+			-Eigenschaften steigerung
+			-Untique zb bei computer
+		}
+	}
+
+}
+
+
+1.1 Voraussetzungen Prüfen 
+PHP 5.4.4{
+	-Objektorientiert
+	-Modular
+	-Gut auskommentiert
+	-Wiederverwertbar
+	-MYSQLi (Wegen dem Angeblichen geschwindigkeitsvorteil)
+	-Zur kleine Performance verbesserung (http://floern.com/webscripting/geschwindigkeit-von-php-scripts-optimieren)
+	-Auf sicherheit Achten vs SQL Injektion or XSS
+
+}
+
+2.  Login/Registration erstellen{
+	-Salted Passwort
+}
+
+
+3.  Spielinhalt bedenken
+
+3.1 Charakterprofil {
+	-Name
+	-Eigenschaften{
+		-Int
+		-Kreativität
+		-...
+	}
+	-Klasse(Entwikler,Projektleiter,Kreation)
+	-Level
+	-Geld
+	-Xp
+}
+
+3.2 Aktivitäten {
+	-Arbeiten
+	-Lernen
+	-Schlafen
+	-Kaufen(z.b) neuer computer
+}
+
+
+3.3 Aussehen {
+	-Vorerst Textbasiert
+	-Erweiterungen folgen
+}
+
+
+4. Umsetzung planen
+
+5. Grundgerüst programmieren
+
+5.1 Tests 
+
+
+Spielerklärung:
+Man fängt als Azubi in einem Unternehmen an -Charakterauswahl
+                -Entwikler
+                -Kreation
+                -etc
+
+
+Mit diesen Charakteren ist es die Aufgabe Level zu erreichen ab einem bestimmten Level wird man befördert und Kann Andere Projekte mit machen.
+Der Charakter soll kein leben wo er sterben kann sondern :
+                -Int
+                -Motivation
+		-Energie
+                etc.
+
+Umso produktiver desto mehr Geld kriegt man. 
+
+
+

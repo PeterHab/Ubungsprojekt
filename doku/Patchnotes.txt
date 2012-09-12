@@ -1,0 +1,5 @@
+﻿12.09.2012
+15:30 /includes/myDB.inc.php - Datenbank Klasse - Erstellt und 2 Funktionen hinzugef�gt (connection,close) 
+15:40 /includes/mysql.inc.php- Erstellt und mit Logindaten befüllt
+16.40 /login/login.php - fertig mit dem HTML-Teil wird aber der HTML code wird noch herausgenommen und includiert in der login_html.php/
+
